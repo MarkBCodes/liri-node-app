@@ -34,3 +34,10 @@ function inputOfUser(userChoices, paramInput) {
       );
   }
 }
+//Bands in Town function for concert query results
+function concertInforResult(paramInput) {
+  if (!error && response.statuscode === 200) {
+    var shows = JSON.parse(body);
+    for (var i = 0; i < shows.length; i++) {}
+  }
+}
