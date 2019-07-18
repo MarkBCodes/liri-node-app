@@ -1,9 +1,8 @@
 require("dotenv").config();
 
-var keys = require("./keys.js");
-
-var spotify = new spotify(keys.spotify);
+var keys = require("../liri-node-app/keys");
 var Spotify = require("node-spotify-api");
+var spotify = new Spotify(keys.spotify);
 var fs = require("fs");
 var request = require("request");
 
@@ -20,7 +19,7 @@ function inputOfUser(userChoices, paramInput) {
       displayConcertInfo(paramInput);
       break;
     case "spotify-this-song":
-      displaySongInfo(paramInput);
+      inputOfUser = displaySongInfo(paramInput);
       break;
     case "movie-this":
       displayMovieInfo(paramInput);
@@ -111,7 +110,12 @@ function movieInfo(paramInput) {
     console.log(
       "Check out the info on 'Mr. Nobody', here: http://www.imdb.com/title/tt0485947/"
     );
-    console.log("It's probably still on Netflix");
+    fs.appendFileSync(
+      "log.txt",
+      "If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/" +
+        "\n"
+    );
+    console.log("It's on Netflix!");
   }
   var queryUrl =
     "http://www.omdbapi.com/?i=" +
@@ -155,8 +159,8 @@ function movieInfo(paramInput) {
   });
 }
 
-function giveSomeInfo() {
-  resizeBy.readFile("random.txt", "utf8", function(err, data) {
+function sumInfo() {
+  fs.readFile("random.txt", "utf8", function(err, data) {
     if (err) {
       return console.log(err);
     }
