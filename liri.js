@@ -36,6 +36,10 @@ function inputOfUser(userChoices, paramInput) {
 }
 //Bands in Town
 function concertInforResult(paramInput) {
+  var queryUrl =
+    "https://rest.bandsintown.com/artists/" +
+    paramInput +
+    "/events?app_id=deabd5f7-3bc2-45c9-88c9-f3e8390c3bbc";
   if (!error && response.statusCode === 200) {
     var shows = JSON.parse(body);
     for (var i = 0; i < shows.length; i++) {
@@ -109,7 +113,7 @@ function movieInfo(paramInput) {
     );
     console.log("It's probably still on Netflix");
   }
-  var queryurl =
+  var queryUrl =
     "http://www.omdbapi.com/?i=" +
     paramInput +
     "&y=&plot=short&apikey=286db962";
