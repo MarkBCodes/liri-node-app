@@ -34,10 +34,50 @@ function inputOfUser(userChoices, paramInput) {
       );
   }
 }
-//Bands in Town function for concert query results
+//Bands in Town
 function concertInforResult(paramInput) {
   if (!error && response.statuscode === 200) {
     var shows = JSON.parse(body);
-    for (var i = 0; i < shows.length; i++) {}
+    for (var i = 0; i < shows.length; i++) {
+      console.log("==========CONCERT INFO==========");
+      console.log(i);
+      console.log("Venue: " + shows[i].venue.name);
+      console.log("Location: " + shows[i].venue.city);
+      console.log("Event Date: " + shows[i].datetime);
+      console.log("================================");
+    }
+  } else {
+    console.log("Error!");
   }
+}
+
+//Spotify
+function songInfo(paramInput) {
+  //default song
+  if (paramInput === undefined) {
+    paramInput = "The Sign";
+  }
+  spotify.search(
+    {
+      type: "track",
+      query: paramInput
+    },
+    function(err, data) {
+      if (err) {
+        console.log("Error Occured: " + err);
+        return;
+      }
+      var music = data.tracks.items;
+
+      for (var i = 0; i < music.lenght; i++) {
+        console.log("===========SONG INFO===========");
+        console.log(i);
+        console.log("Title: " + music[i].name);
+        console.log("Preview: " + music[i].preview_url);
+        console.log("Album: " + music[i].album.name);
+        console.log("Artist: " + music[i].artist.name);
+        console.log("===============================");
+      }
+    }
+  );
 }
