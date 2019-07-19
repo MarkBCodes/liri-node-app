@@ -65,11 +65,9 @@ function displayConcertInfo(paramInput) {
 //Spotify
 function displaySongInfo(paramInput) {
   //default song
-  console.log(paramInput);
   if (paramInput == undefined) {
     paramInput = "The Sign";
   }
-  console.log(paramInput);
   spotify.search(
     {
       type: "track",
@@ -81,7 +79,7 @@ function displaySongInfo(paramInput) {
         return;
       }
       var music = data.tracks.items;
-      console.log(JSON.stringify(music[0].album, null, 2));
+      console.log(JSON.stringify(music[0].Album, null, 2));
 
       for (var i = 0; i < music.lenght; i++) {
         console.log("===========SONG DETAILS===========");
