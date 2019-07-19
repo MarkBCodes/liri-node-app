@@ -79,25 +79,28 @@ function displaySongInfo(paramInput) {
         return;
       }
       var music = data.tracks.items;
-      console.log(JSON.stringify(music[0].Album, null, 2));
+      // console.log(JSON.stringify(music, null, 2));
 
-      for (var i = 0; i < music.lenght; i++) {
-        console.log("===========SONG DETAILS===========");
+      for (var i = 0; i < music.length; i++) {
+        console.log("**********SONG INFO*********");
         fs.appendFileSync("log.txt", "**********SONG INFO*********\n");
         console.log(i);
         fs.appendFileSync("log.txt", i + "\n");
-        console.log("Title: " + music[i].name);
-        fs.appendFileSync("log.txt", "Title: " + music[i].name + "\n");
-        console.log("Preview: " + music[i].preview_url);
-        fs.appendFileSync("log.txt", "preview: " + music[i].preview_url + "\n");
-        console.log("Album: " + music[i].album.name);
-        fs.appendFileSync("log.txt", "Album: " + music[i].album.name + "\n");
-        console.log("Artist: " + music[i].artist.name);
+        console.log("Song name: " + music[i].name);
+        fs.appendFileSync("log.txt", "song name: " + music[i].name + "\n");
+        console.log("Preview song: " + music[i].preview_url);
         fs.appendFileSync(
           "log.txt",
-          "Artist: " + music[i].artists[0].name + "\n"
+          "preview song: " + music[i].preview_url + "\n"
         );
-        console.log("===============================");
+        console.log("Album: " + music[i].album.name);
+        fs.appendFileSync("log.txt", "album: " + music[i].album.name + "\n");
+        console.log("Artist(s): " + music[i].artists[0].name);
+        fs.appendFileSync(
+          "log.txt",
+          "artist(s): " + music[i].artists[0].name + "\n"
+        );
+        console.log("*****************************");
         fs.appendFileSync("log.txt", "*****************************\n");
       }
     }
