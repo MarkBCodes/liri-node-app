@@ -39,25 +39,27 @@ function displayConcertInfo(paramInput) {
     "https://rest.bandsintown.com/artists/" +
     paramInput +
     "/events?app_id=deabd5f7-3bc2-45c9-88c9-f3e8390c3bbc";
-  if (!error && response.statusCode === 200) {
-    var shows = JSON.parse(body);
-    for (var i = 0; i < shows.length; i++) {
-      console.log("==========CONCERT DETAILS==========");
-      fs.appendFileSync("log.txt", "**********CONCERT INFO*********\n");
-      console.log(i);
-      fs.appendFileSync("log.txt", i + "\n");
-      console.log("Venue: " + shows[i].venue.name);
-      fs.appendFileSync("log.txt", "Venue: " + shows[i].venue.name + "\n");
-      console.log("Location: " + shows[i].venue.city);
-      fs.appendFileSync("log.txt", "Location: " + shows[i].venue.city + "\n");
-      console.log("Event Date: " + shows[i].datetime);
-      fs.appendFileSync("log.txt", "Event Date: " + shows[i].datetime + "\n");
-      console.log("================================");
-      fs.appendFileSync("log.txt", "*****************************" + "\n");
+  request(queryUrl, function(error, response, body) {
+    if (!error && response.statusCode === 200) {
+      var concerts = JSON.parse(body);
+      for (var i = 0; i < shows.length; i++) {
+        console.log("==========CONCERT DETAILS==========");
+        fs.appendFileSync("log.txt", "**********CONCERT INFO*********\n");
+        console.log(i);
+        fs.appendFileSync("log.txt", i + "\n");
+        console.log("Venue: " + shows[i].venue.name);
+        fs.appendFileSync("log.txt", "Venue: " + shows[i].venue.name + "\n");
+        console.log("Location: " + shows[i].venue.city);
+        fs.appendFileSync("log.txt", "Location: " + shows[i].venue.city + "\n");
+        console.log("Event Date: " + shows[i].datetime);
+        fs.appendFileSync("log.txt", "Event Date: " + shows[i].datetime + "\n");
+        console.log("================================");
+        fs.appendFileSync("log.txt", "*****************************" + "\n");
+      }
+    } else {
+      console.log("Error occurred.");
     }
-  } else {
-    console.log("Error!");
-  }
+  });
 }
 
 //Spotify
