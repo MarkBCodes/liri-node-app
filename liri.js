@@ -65,7 +65,7 @@ function displayConcertInfo(paramInput) {
 //Spotify
 function displaySongInfo(paramInput) {
   //default song
-  if (paramInput == undefined) {
+  if (paramInput === undefined) {
     paramInput = "The Sign";
   }
   spotify.search(
@@ -108,13 +108,14 @@ function displaySongInfo(paramInput) {
 }
 
 //OMDB
-function displayMovieInfo(paramInput) {
-  //default result if undefined
-  if (paramInput === undefined) {
-    paramInput = "Mr. Nobody";
+
+function displayMovieInfo(inputParameter) {
+  if (inputParameter === undefined) {
+    inputParameter = "Mr. Nobody";
     console.log("=====================");
+    fs.appendFileSync("log.txt", "-----------------------\n");
     console.log(
-      "Check out the info on 'Mr. Nobody', here: http://www.imdb.com/title/tt0485947/"
+      "If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/"
     );
     fs.appendFileSync(
       "log.txt",
@@ -122,23 +123,24 @@ function displayMovieInfo(paramInput) {
         "\n"
     );
     console.log("It's on Netflix!");
+    fs.appendFileSync("log.txt", "It's on Netflix!\n");
   }
   var queryUrl =
-    "http://www.omdbapi.com/?i=" +
-    paramInput +
+    "http://www.omdbapi.com/?t=" +
+    inputParameter +
     "&y=&plot=short&apikey=286db962";
   request(queryUrl, function(error, response, body) {
-    // if successful
+    //if successful...
     if (!error && response.statusCode === 200) {
       var movie = JSON.parse(body);
-      console.log("==========MOVIE DETAILS==========");
-      fs.appendFileSync("log.txt", "==========MOVIE DETAILS==========\n");
+      console.log("**********MOVIE INFO*********");
+      fs.appendFileSync("log.txt", "**********MOVIE INFO*********\n");
       console.log("Title: " + movie.Title);
       fs.appendFileSync("log.txt", "Title: " + movie.Title + "\n");
-      console.log("Released: " + movie.Year);
-      fs.appendFileSync("log.txt", "Released: " + movie.Year + "\n");
-      console.log("IMDB Rating: " + movie.ImdbRating);
-      fs.appendFileSync("IMDB Rating: " + movie.ImdbRating + "\n");
+      console.log("Release Year: " + movie.Year);
+      fs.appendFileSync("log.txt", "Release Year: " + movies.Year + "\n");
+      console.log("IMDB Rating: " + movie.imdbRating);
+      fs.appendFileSync("log.txt", "IMDB Rating: " + movie.imdbRating + "\n");
       console.log(
         "Rotten Tomatoes Rating: " + getRottenTomatoesRatingValue(movie)
       );
@@ -160,7 +162,7 @@ function displayMovieInfo(paramInput) {
       console.log("*****************************");
       fs.appendFileSync("log.txt", "*****************************\n");
     } else {
-      console.log("Error!");
+      console.log("Error occurred.");
     }
   });
 }
