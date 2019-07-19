@@ -41,7 +41,7 @@ function displayConcertInfo(paramInput) {
     "/events?app_id=deabd5f7-3bc2-45c9-88c9-f3e8390c3bbc";
   request(queryUrl, function(error, response, body) {
     if (!error && response.statusCode === 200) {
-      var concerts = JSON.parse(body);
+      var shows = JSON.parse(body);
       for (var i = 0; i < shows.length; i++) {
         console.log("==========CONCERT DETAILS==========");
         fs.appendFileSync("log.txt", "**********CONCERT INFO*********\n");

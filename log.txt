@@ -17,3 +17,243 @@ If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/
 ==========MOVIE DETAILS==========
 Title: undefined
 Released: undefined
+**********CONCERT INFO*********
+0
+Venue: Park MGM Las Vegas
+Location: Las Vegas
+Event Date: 2019-08-21T20:00:00
+*****************************
+**********CONCERT INFO*********
+1
+Venue: Park MGM Las Vegas
+Location: Las Vegas
+Event Date: 2019-08-23T20:00:00
+*****************************
+**********CONCERT INFO*********
+2
+Venue: Park MGM Las Vegas
+Location: Las Vegas
+Event Date: 2019-08-24T20:00:00
+*****************************
+**********CONCERT INFO*********
+3
+Venue: Park MGM Las Vegas
+Location: Las Vegas
+Event Date: 2019-08-28T20:00:00
+*****************************
+**********CONCERT INFO*********
+4
+Venue: Park MGM Las Vegas
+Location: Las Vegas
+Event Date: 2019-08-31T20:00:00
+*****************************
+**********CONCERT INFO*********
+5
+Venue: Park MGM Las Vegas
+Location: Las Vegas
+Event Date: 2019-09-01T20:00:00
+*****************************
+**********CONCERT INFO*********
+6
+Venue: Mercedes-Benz Arena
+Location: Berlin
+Event Date: 2019-09-26T20:00:00
+*****************************
+**********CONCERT INFO*********
+7
+Venue: Sportpaleis Antwerp
+Location: Antwerpen
+Event Date: 2019-09-28T18:30:00
+*****************************
+**********CONCERT INFO*********
+8
+Venue: Ziggo Dome
+Location: Amsterdam Zuidoost
+Event Date: 2019-09-30T20:00:00
+*****************************
+**********CONCERT INFO*********
+9
+Venue: Kleine Olympiahalle München
+Location: München
+Event Date: 2019-10-03T20:00:00
+*****************************
+**********CONCERT INFO*********
+10
+Venue: Lanxess Arena
+Location: Köln
+Event Date: 2019-10-05T20:00:00
+*****************************
+**********CONCERT INFO*********
+11
+Venue: Wiener Stadthalle - Halle D
+Location: Vienna
+Event Date: 2019-10-07T19:00:00
+*****************************
+**********CONCERT INFO*********
+12
+Venue: Hallenstadion
+Location: Zürich-oerlikon
+Event Date: 2019-10-09T20:00:00
+*****************************
+**********CONCERT INFO*********
+13
+Venue: Delivery SAP Arena
+Location: Mannheim
+Event Date: 2019-10-11T20:00:00
+*****************************
+**********CONCERT INFO*********
+14
+Venue: Barclaycard Arena Hamburg
+Location: Hamburg
+Event Date: 2019-10-13T18:00:00
+*****************************
+**********CONCERT INFO*********
+15
+Venue: Royal Arena
+Location: København S
+Event Date: 2019-10-15T20:00:00
+*****************************
+**********CONCERT INFO*********
+16
+Venue: Friends Arena
+Location: Stockholm
+Event Date: 2019-10-17T19:30:00
+*****************************
+**********CONCERT INFO*********
+17
+Venue: The O2
+Location: London
+Event Date: 2019-10-20T18:00:00
+*****************************
+**********CONCERT INFO*********
+18
+Venue: The O2
+Location: London
+Event Date: 2019-10-21T18:30:00
+*****************************
+**********CONCERT INFO*********
+19
+Venue: Manchester Arena
+Location: Manchester
+Event Date: 2019-10-24T00:00:00
+*****************************
+**********CONCERT INFO*********
+20
+Venue: Arena Birmingham
+Location: Birmingham
+Event Date: 2019-10-26T18:00:00
+*****************************
+**********CONCERT INFO*********
+21
+Venue: The SSE Hydro
+Location: Glasgow
+Event Date: 2019-10-28T18:30:00
+*****************************
+**********CONCERT INFO*********
+22
+Venue: first direct arena
+Location: Leeds
+Event Date: 2019-10-30T20:00:00
+*****************************
+**********CONCERT INFO*********
+23
+Venue: 3Arena
+Location: Dublin
+Event Date: 2019-11-01T20:00:00
+*****************************
+**********CONCERT INFO*********
+24
+Venue: SSE Arena
+Location: Belfast
+Event Date: 2019-11-03T20:00:00
+*****************************
+**********CONCERT INFO*********
+25
+Venue: Rose Quarter (Consists of the Moda Center and Veterans Memorial Coliseum)
+Location: Portland
+Event Date: 2019-11-19T19:30:00
+*****************************
+**********CONCERT INFO*********
+26
+Venue: Chase Center
+Location: San Francisco
+Event Date: 2019-11-21T19:30:00
+*****************************
+**********CONCERT INFO*********
+27
+Venue: Gila River Arena
+Location: Glendale
+Event Date: 2019-11-23T20:00:00
+*****************************
+**********CONCERT INFO*********
+28
+Venue: Pepsi Center
+Location: Denver
+Event Date: 2019-11-25T19:30:00
+*****************************
+**********CONCERT INFO*********
+29
+Venue: United Center
+Location: Chicago
+Event Date: 2019-11-27T19:30:00
+*****************************
+**********CONCERT INFO*********
+30
+Venue: Scotiabank Arena
+Location: Toronto
+Event Date: 2019-11-29T19:30:00
+*****************************
+**********CONCERT INFO*********
+31
+Venue: Madison Square Garden
+Location: New York
+Event Date: 2019-12-03T19:30:00
+*****************************
+**********CONCERT INFO*********
+32
+Venue: Madison Square Garden
+Location: New York
+Event Date: 2019-12-04T19:30:00
+*****************************
+**********CONCERT INFO*********
+33
+Venue: Wells Fargo Center
+Location: Philadelphia
+Event Date: 2019-12-06T20:00:00
+*****************************
+**********CONCERT INFO*********
+34
+Venue: TD Garden
+Location: Boston
+Event Date: 2019-12-08T19:30:00
+*****************************
+**********CONCERT INFO*********
+35
+Venue: Capital One Arena
+Location: Washington
+Event Date: 2019-12-10T19:30:00
+*****************************
+**********CONCERT INFO*********
+36
+Venue: Smoothie King Center
+Location: New Orleans
+Event Date: 2019-12-13T20:00:00
+*****************************
+**********CONCERT INFO*********
+37
+Venue: Toyota Center
+Location: Houston
+Event Date: 2019-12-15T19:30:00
+*****************************
+**********CONCERT INFO*********
+38
+Venue: AT&T Center
+Location: San Antonio
+Event Date: 2019-12-17T19:30:00
+*****************************
+**********CONCERT INFO*********
+39
+Venue: American Airlines Center
+Location: Dallas
+Event Date: 2019-12-19T19:30:00
+*****************************
