@@ -19,7 +19,7 @@ function inputOfUser(userChoices, paramInput) {
       displayConcertInfo(paramInput);
       break;
     case "spotify-this-song":
-      inputOfUser = displaySongInfo(paramInput);
+      displaySongInfo(paramInput);
       break;
     case "movie-this":
       displayMovieInfo(paramInput);
@@ -34,7 +34,7 @@ function inputOfUser(userChoices, paramInput) {
   }
 }
 //Bands in Town
-function concertInforResult(paramInput) {
+function displayConcertInfo(paramInput) {
   var queryUrl =
     "https://rest.bandsintown.com/artists/" +
     paramInput +
@@ -61,11 +61,13 @@ function concertInforResult(paramInput) {
 }
 
 //Spotify
-function songInfo(paramInput) {
+function displaySongInfo(paramInput) {
   //default song
-  if (paramInput === undefined) {
+  console.log(paramInput);
+  if (paramInput == undefined) {
     paramInput = "The Sign";
   }
+  console.log(paramInput);
   spotify.search(
     {
       type: "track",
@@ -77,6 +79,7 @@ function songInfo(paramInput) {
         return;
       }
       var music = data.tracks.items;
+      console.log(JSON.stringify(music[0].album, null, 2));
 
       for (var i = 0; i < music.lenght; i++) {
         console.log("===========SONG DETAILS===========");
@@ -102,7 +105,7 @@ function songInfo(paramInput) {
 }
 
 //OMDB
-function movieInfo(paramInput) {
+function displayMovieInfo(paramInput) {
   //default result if undefined
   if (paramInput === undefined) {
     paramInput = "Mr. Nobody";
@@ -121,7 +124,7 @@ function movieInfo(paramInput) {
     "http://www.omdbapi.com/?i=" +
     paramInput +
     "&y=&plot=short&apikey=286db962";
-  request(queryurl, function(error, response, body) {
+  request(queryUrl, function(error, response, body) {
     // if successful
     if (!error && response.statusCode === 200) {
       var movie = JSON.parse(body);
@@ -157,6 +160,17 @@ function movieInfo(paramInput) {
       console.log("Error!");
     }
   });
+}
+
+//Rotten Tomatoes rating
+function getRottenTomatoesRatingObject(data) {
+  return data.Ratings.find(function(item) {
+    return item.Source === "Rotten Tomatoes";
+  });
+}
+
+function getRottenTomatoesRatingValue(data) {
+  return getRottenTomatoesRatingObject(data).Value;
 }
 
 function sumInfo() {
