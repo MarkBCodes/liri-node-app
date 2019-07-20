@@ -138,7 +138,7 @@ function displayMovieInfo(inputParameter) {
       console.log("Title: " + movie.Title);
       fs.appendFileSync("log.txt", "Title: " + movie.Title + "\n");
       console.log("Release Year: " + movie.Year);
-      fs.appendFileSync("log.txt", "Release Year: " + movies.Year + "\n");
+      fs.appendFileSync("log.txt", "Release Year: " + movie.Year + "\n");
       console.log("IMDB Rating: " + movie.imdbRating);
       fs.appendFileSync("log.txt", "IMDB Rating: " + movie.imdbRating + "\n");
       console.log(
