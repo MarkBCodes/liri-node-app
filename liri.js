@@ -178,12 +178,13 @@ function getRottenTomatoesRatingValue(data) {
   return getRottenTomatoesRatingObject(data).Value;
 }
 
+//function for reading out of random.txt file
 function sumInfo() {
   fs.readFile("random.txt", "utf8", function(err, data) {
     if (err) {
       return console.log(err);
     }
     var dataArray = data.split(",");
-    inputOfUser(dataArray[0], dataArray[1]);
+    UserInputs(dataArray[0], dataArray[1]);
   });
 }
