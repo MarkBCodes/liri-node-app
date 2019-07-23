@@ -1,5 +1,19 @@
 # Liri-Node-App
 
+## Role
+
+> Mark Bullard worked as the developer of this project.
+
+### Technologies Used
+
+> The following are the technologies used during the creation of this Node application, which runs in the console of the user's system.
+
+- JavaScript
+- Node
+- Bands in Town API
+- Spotify API
+- OMDB API
+
 ### Why this is useful?
 
 "Clearly state the problem the app is trying to solve (i.e. what is it doing and why)"...
@@ -42,4 +56,4 @@
 
   ![alt text](https://github.com/Gudbrandr42/liri-node-app/blob/master/media/OMDBResults.PNG?raw=true)
 
-  - the results show the desired movie, based on the title, but will not show alternatives with similar names without their subtitles.
+  - the results show the desired movie, based on the title.
