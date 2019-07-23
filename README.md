@@ -27,4 +27,19 @@
 - after typing in any one of the following commands, type in the band, movie, or song of your chosing the application will return information on that query.
 
   For example "node liri.js concert-this Cher" returns:
+
   ![alt text](https://github.com/Gudbrandr42/liri-node-app/blob/master/media/BandsInTownResults.PNG?raw=true)
+
+  - The above is a list of shows for the artist and the dates and locations for the upcoming events.
+
+  The next example is for Spotify. "node liri.js spotifty-this-song bawitdaba" shows results like this:
+
+  ![alt text](https://github.com/Gudbrandr42/liri-node-app/blob/master/media/SpotifyResults.PNG?raw=true)
+
+  - The results turns this way to similar songs, covers of the desired song, and the actual song itself. This is the behavior of how searching on spotify works as well. I have found that null values for songs are due to albums coming up, where the songs are listed so there is no preview given. This is also common in the search on the GUI side with the actual Spotify App.
+
+  Lastly is OMDB, where "node liri.js movie-this Hackers" returns a singular search result of the movie in question:
+
+  ![alt text](https://github.com/Gudbrandr42/liri-node-app/blob/master/media/OMDBResults.PNG?raw=true)
+
+  - the results show the desired movie, based on the title, but will not show alternatives with similar names without their subtitles.

@@ -2933,3 +2933,39 @@ Language: English, Italian, Japanese, Russian
 Plot: Hackers are blamed for making a virus that will capsize five oil tankers.
 Actors: Jonny Lee Miller, Angelina Jolie, Jesse Bradford, Matthew Lillard
 *****************************
+**********MOVIE INFO*********
+Title: Star
+Release Year: 2001
+IMDB Rating: 7.8
+**********MOVIE INFO*********
+Title: Star Trek
+Release Year: 2009
+IMDB Rating: 8.0
+Rotten Tomatoes Rating: 94%
+Country of Production: USA, Germany
+Language: English
+Plot: The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time.
+Actors: Chris Pine, Zachary Quinto, Leonard Nimoy, Eric Bana
+*****************************
+**********MOVIE INFO*********
+Title: The Punisher
+Release Year: 2017–2019
+IMDB Rating: 8.6
+**********MOVIE INFO*********
+Title: The Punisher
+Release Year: 2017–2019
+IMDB Rating: 8.6
+**********MOVIE INFO*********
+Title: The Punisher
+Release Year: 2017–2019
+IMDB Rating: 8.6
+**********MOVIE INFO*********
+Title: Hackers
+Release Year: 1995
+IMDB Rating: 6.2
+Rotten Tomatoes Rating: undefined
+Country of Production: USA
+Language: English, Italian, Japanese, Russian
+Plot: Hackers are blamed for making a virus that will capsize five oil tankers.
+Actors: Jonny Lee Miller, Angelina Jolie, Jesse Bradford, Matthew Lillard
+*****************************
