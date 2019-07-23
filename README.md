@@ -21,5 +21,6 @@
 - navigate to your console
 - type in "node <app.js filename>.js" then any one of the following commands: - concert-this - spotrify-this-song - movie-this - do-what-it-says
 - after typing in any one of the following commands, type in the band, movie, or song of your chosing the application will return information on that query.
+
   For example "node liri.js concert-this Cher" returns:
   ![alt text](https://github.com/Gudbrandr42/liri-node-app/blob/master/media/BandsInTownResults.PNG?raw=true)
